@@ -148,7 +148,7 @@ var BannerVars = []string{
 	"PLATFORM_VERSION_CODENAME",
 	"PLATFORM_VERSION",
 	"CR_VERSION",
-	"MATRIXX_BUILD_INFO",
+	"STARK_BUILD_INFO",
 	"STARK_MAINTAINER",
 	"PRODUCT_INCLUDE_TAGS",
 	"PRODUCT_SOURCE_ROOT_DIRS",
@@ -191,7 +191,7 @@ func Banner(make_vars map[string]string) string {
 		fmt.Fprintln(b, "==========================================================")
 		fmt.Fprintln(b, "               StarkOS by JigenxOhtsusuki                 ")
 		fmt.Fprintln(b, "==========================================================")
-		fmt.Fprintf(b, "%s=%s\n", "STARK_BUILD_INFO", make_vars["MATRIXX_BUILD_INFO"])
+		fmt.Fprintf(b, "%s=%s\n", "STARK_BUILD_INFO", make_vars["STARK_BUILD_INFO"])
 		fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION", make_vars["PLATFORM_VERSION"])
 	        fmt.Fprintf(b, "%s=%s\n", "STARK_MAINTAINER", make_vars["STARK_MAINTAINER"])
 		fmt.Fprintf(b, "%s=%s\n", "STARK_VERSION", make_vars["CR_VERSION"])
